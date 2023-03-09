@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    height: 97vh;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gridContainer {
+    flex: auto;
+    background-color:red;
+    display: grid;
+    padding: 2vh;
+    gap: 0px;
+    
+    
+}
+
+.gridBox {
+    background-color: gray;
+    padding: 0.2rem;
+}
+
+.gridBox::before {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
