@@ -2,13 +2,14 @@ body {
     text-align: center;
     height: 97vh;
     display:flexbox;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
 }
 
 .gridContainer {
-    flex: auto;
+    /*flex: auto;*/
     background-color:red;
     display: grid;
     padding: 2vh;
