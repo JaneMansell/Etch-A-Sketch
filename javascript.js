@@ -33,7 +33,17 @@ function removeColourClass(e) {
     window.removeEventListener('mouseover', addColourClass);
 }
 
+function blankGrid() {
+    const gridBoxes = document.querySelectorAll('.gridBox');
+    gridBoxes.forEach((gridBox) => {
+        gridBox.classList.remove('sketch');
+    });
+
+}
+
 createGrid(32,16);
 
 window.addEventListener('mousedown', colourBlack);
 window.addEventListener('mouseup', addColourClass);
+const clearGrid = document.querySelector('#clearGrid');
+clearGrid.addEventListener('click', blankGrid);

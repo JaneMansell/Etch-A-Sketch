@@ -31,3 +31,9 @@ body {
 .sketch {
     background-color: black;
 }
+
+#pixelChange, #clearGrid {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: lightgray;
+}
