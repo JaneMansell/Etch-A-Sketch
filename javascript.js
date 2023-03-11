@@ -78,7 +78,7 @@ function changePixels() {
     }
 }
 
-createGrid(32,16);
+createGrid(16,16);
 
 window.addEventListener('mousedown', colourBlack);
 window.addEventListener('mouseup', addColourClass);
