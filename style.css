@@ -1,34 +1,43 @@
 body {
     text-align: center;
-    height: 97vh;
-    width: 80vw;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gridContainer {
-    
+    align-self: center;
     background-color:red;
     display: grid;
     padding: 2vh;
     gap: 0px;
+    width: 600px;
+    height: 600px;
     
     
 }
 
 .gridBox {
     background-color: gray;
-    /*padding: 0.1rem;*/
-    padding: 1px;
+    
+    height: 37.5px;
+    width: 37.5px;
+    
 }
-
+/*
 .gridBox::before {
     content: "";
     padding-bottom: 100%;
     display: block;
 }
-
+*/
 .sketch {
     background-color: black;
+}
+
+.buttonStrip {
+    display:flex;
+    justify-content: center;
 }
 
 #pixelChange, #clearGrid {
