@@ -11,26 +11,14 @@ body {
     display: grid;
     padding: 2vh;
     gap: 0px;
-    width: 600px;
-    height: 600px;
-    
     
 }
 
 .gridBox {
     background-color: gray;
     
-    height: 37.5px;
-    width: 37.5px;
-    
 }
-/*
-.gridBox::before {
-    content: "";
-    padding-bottom: 100%;
-    display: block;
-}
-*/
+
 .sketch {
     background-color: black;
 }

@@ -3,13 +3,28 @@ function createGrid(gridWidth,gridLength) {
     const gridSize = gridWidth * gridLength;
 
     const gridContainer = document.querySelector('.gridContainer');
+    let maxSize;
+    if (gridWidth < gridLength) {
+        maxSize = 600/gridLength;
+    }
+    else {
+        maxSize = 600/gridWidth;
+    }
+    let newWidth = maxSize * gridWidth;
+    let newLength = maxSize * gridLength;
+
+    gridContainer.style.width = `${newWidth}px`;
+    gridContainer.style.height = `${newLength}px`;
+
     gridContainer.style.gridTemplateColumns = `repeat(${gridWidth}, 1fr)`;
     gridContainer.style.gridTemplateRows = `repeat(${gridLength}, 1fr)`;
     
     for (let i = 0; i < gridSize; i++) {
         const gridBox = document.createElement('div');
         gridBox.classList.add('gridBox');
-        gridBox.setAttribute('id', 'grid' + i)
+        gridBox.setAttribute('id', 'grid' + i);
+        gridBox.style.width = `${maxSize}px`;
+        gridBox.style.height = `${maxSize}px`;
         gridContainer.appendChild(gridBox);
     }
 }
